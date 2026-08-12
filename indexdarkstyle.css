@@ -1,0 +1,549 @@
+/*========================================*
+* LOKDHAM THEME
+*========================================*/
+
+:root {
+    --black: #050505;
+    --black-light: #0B0B0B;
+    --surface: #111111;
+    --charcoal-dark: #252525;
+    --charcoal: #555555;
+    --charcoal-light: #858585;
+    --gold-dark: #8F6410;
+    --gold: #C8931A;
+    --gold-light: #E0AD32;
+    --white: #FFFFFF;
+    --text: #E5E5E5;
+    --muted: #A5A5A5;
+    --charcoal-gradient: linear-gradient(135deg, #222 0%, #777 40%, #444 65%, #222 100%);
+    --gold-gradient: linear-gradient(135deg, #8F6410 0%, #C8931A 30%, #F0C04A 50%, #C8931A 72%, #8F6410 100%);
+    --gold-glow: rgba(200, 147, 26, .10);
+    --charcoal-glow: rgba(120, 120, 120, .07);
+}
+
+/*========================================*
+* GENERAL
+*========================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*========================================*
+*        ANIMATED LOKDHAM BACKGROUND
+*========================================*/
+
+/*========================================*
+*       ANIMATED BACKGROUND
+*========================================*/
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--black);
+    color:var(--text);
+}
+
+
+
+.menu-toggle {
+    display: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+section {
+    padding: 90px 8%;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 40px;
+    color: var(--gold);
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.2;
+}
+
+h3 {
+    color: var(--gold);
+}
+
+p {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+/*========================================*
+* NAVBAR
+*========================================*/
+
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    position: sticky;
+    top: 0;
+    background: rgba(5, 5, 5, .96);
+    border-bottom: 1px solid rgba(200, 147, 26, .18);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .5);
+    z-index: 999;
+}
+
+.logo img {
+    width: 80px;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+nav ul a:hover {
+    color: var(--gold);
+}
+
+.btn {
+    display: inline-block;
+    background: var(--gold-gradient);
+    color: #080808;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(200, 147, 26, .22);
+}
+
+.btn-outline {
+    display: inline-block;
+    background: transparent;
+    color: var(--gold);
+    padding: 13px 28px;
+    border: 1px solid var(--gold);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.btn-outline:hover {
+    background: var(--gold-gradient);
+    color: #080808;
+    transform: translateY(-2px);
+}
+
+/*========================================*
+* HERO
+*========================================*/
+/*========================================*
+*              HERO STAR FIELD
+*========================================*/
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:80px;
+    position:relative;
+    overflow:hidden;
+    background:#050505;
+}
+
+/*========================================*
+*              STAR FIELD
+*========================================*/
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:80px;
+    position:relative;
+    overflow:hidden;
+    background:#050505;
+}
+
+.starfield{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
+    pointer-events:none;
+    z-index:1;
+}
+
+.star{
+    position:absolute;
+    left:50%;
+    top:50%;
+    width:2px;
+    height:2px;
+    border-radius:50%;
+    pointer-events:none;
+}
+
+.star.gold{
+    background:#E0AD32;
+    box-shadow:0 0 6px rgba(224,173,50,.9),0 0 14px rgba(200,147,26,.5);
+}
+
+.star.charcoal{
+    background:#858585;
+    box-shadow:0 0 5px rgba(133,133,133,.7);
+}
+
+.hero-left,
+.hero-right{
+    position:relative;
+    z-index:2;
+}
+
+.hero-left,
+.hero-right{
+    position:relative;
+    z-index:2;
+}
+
+.hero-left,
+.hero-right{
+    position:relative;
+    z-index:2;
+}
+
+.hero-left {
+    flex: 1;
+}
+
+.hero-left h1 {
+    font-size: 56px;
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.brand-charcoal {
+    background: var(--charcoal-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.brand-gold {
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.developer-text {
+    color: var(--text);
+    font-size: .42em;
+    font-weight: 500;
+    letter-spacing: 6px;
+}
+
+.hero-left h3 {
+    margin: 20px 0;
+    color: var(--gold);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.hero-left p {
+    max-width: 550px;
+    margin-bottom: 35px;
+    color: var(--muted);
+    font-size: 17px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-right img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 20px;
+    border: 1px solid rgba(200, 147, 26, .18);
+    box-shadow: 0 25px 70px rgba(0, 0, 0, .65);
+}
+
+/*========================================*
+* ABOUT
+*========================================*/
+
+.about {
+    background: var(--black-light);
+    border-top: 1px solid rgba(200, 147, 26, .08);
+    border-bottom: 1px solid rgba(200, 147, 26, .08);
+}
+
+.about p {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    color: var(--muted);
+    font-size: 17px;
+}
+
+/*========================================*
+* PROJECTS
+*========================================*/
+
+.projects {
+    padding: 100px 8%;
+    background: var(--black);
+}
+
+.featured-project {
+    max-width: 1100px;
+    margin: 60px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-project h3 {
+    font-size: 28px;
+    color: var(--gold);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.featured-project p {
+    font-size: 18px;
+    color: var(--muted);
+    margin-bottom: 30px;
+}
+
+.featured-project video {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 24px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid rgba(200, 147, 26, .2);
+    box-shadow: 0 20px 55px rgba(0, 0, 0, .65);
+    transition: .4s ease;
+}
+
+.featured-project:hover video {
+    transform: scale(1.015);
+    border-color: rgba(200, 147, 26, .4);
+}
+
+.featured-project a {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 14px 34px;
+    background: var(--gold-gradient);
+    color: #080808;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.featured-project a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(200, 147, 26, .2);
+}
+
+.coming-soon {
+    max-width: 700px;
+    margin: 70px auto 0;
+    padding: 35px;
+    text-align: center;
+    background: var(--black-light);
+    border: 1px solid rgba(200, 147, 26, .15);
+    border-radius: 20px;
+}
+
+.coming-soon h3 {
+    margin-bottom: 10px;
+}
+
+.coming-soon p {
+    color: var(--muted);
+}
+
+/*========================================*
+* WHY CHOOSE LOKDHAM
+*========================================*/
+
+.why {
+    background: var(--black-light);
+    color: var(--white);
+    border-top: 1px solid rgba(200, 147, 26, .08);
+    border-bottom: 1px solid rgba(200, 147, 26, .08);
+}
+
+.why h2 {
+    color: var(--gold);
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.feature {
+    position: relative;
+    overflow: hidden;
+    background: var(--surface);
+    padding: 30px;
+    border: 1px solid rgba(200, 147, 26, .13);
+    border-radius: 20px;
+    transition: .3s ease;
+}
+
+.feature::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--gold-gradient);
+    opacity: .65;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    border-color: rgba(200, 147, 26, .5);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .45);
+}
+
+.feature h3 {
+    color: var(--gold);
+    margin-bottom: 12px;
+}
+
+.feature p {
+    color: var(--muted);
+}
+
+/*========================================*
+* SERVICES
+*========================================*/
+
+.services {
+    background: var(--black);
+}
+
+.services .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.services .card {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: var(--gold);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 35px 25px;
+    background: var(--black-light);
+    border: 1px solid rgba(200, 147, 26, .15);
+    border-radius: 20px;
+    transition: .3s ease;
+}
+
+.services .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--charcoal-gradient);
+}
+
+.services .card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(200, 147, 26, .5);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .45);
+}
+
+/*========================================*
+* CONTACT
+*========================================*/
+
+.contact {
+    background: var(--black-light);
+    text-align: center;
+    border-top: 1px solid rgba(200, 147, 26, .15);
+    border-bottom: 1px solid rgba(200, 147, 26, .15);
+}
+
+.contact h2 {
+    color: var(--white);
+}
+
+.contact p {
+    color: var(--muted);
+    margin-bottom: 30px;
+}
+
+/*========================================*
+* FOOTER
+*========================================*/
+
+footer {
+    background: #000;
+    color: var(--white);
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid rgba(200, 147, 26, .12);
+}
+
+footer p {
+    color: #777;
+    font-size: 14px;
+}

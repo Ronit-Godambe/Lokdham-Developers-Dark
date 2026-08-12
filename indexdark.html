@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokdham Developers</title>
+
+    <link rel="stylesheet" href="indexdarkstyle.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <div class="logo">
+            <a href="index.html"><img src="lokdhamdark.jpg" alt="Logo"></a>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blogs.html">Blogs</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+
+        <a href="contactus.html" class="btn">Enquire Now</a>
+
+    </nav>
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+        
+    <section class="hero">
+        <div class="starfield"></div>
+        <div class="hero-left">
+            
+            <h1><span class="brand-charcoal">LOK</span><span class="brand-gold">DHAM</span><br><span class="developer-text">DEVELOPERS</span></h1>
+
+            <h3>Building Trust. Creating Future.</h3>
+
+            <p>
+                Developing thoughtfully planned land into investment-ready and residential plots with transparency,
+                trust, and long-term value.
+            </p>
+
+            <div class="buttons">
+
+                <a href="pages/projects.html" class="btn">Explore Projects</a>
+
+                <a href="pages/contactus.html" class="btn-outline">Contact Us</a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+            <img src="lokdhamdarknoback.png" alt="Lokdham-official-logo-with-trademark">
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- ABOUT -->
+
+    <section class="about">
+
+        <div class="container">
+
+            <h2>About Lokdham</h2>
+
+            <p>
+                Lokdham Developers is committed to creating well-planned land development projects that combine
+                excellent locations, clear documentation, and long-term investment value. Our goal is to help families
+                and investors make confident property decisions with complete transparency.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- PROJECTS -->
+
+    <section class="projects">
+
+        <h2>Our Projects</h2>
+
+        <!-- Featured Project -->
+
+        <div class="featured-project">
+
+            <h3>Kelad Greens</h3>
+
+            <p>📍 Near Madhe Ghat, Kelad, Pune - 412212</p>
+
+            <video autoplay muted loop playsinline>
+
+                <source src="keladgreens.mp4" type="video/mp4">
+
+            </video>
+
+            <a href="#">View Project →</a>
+
+        </div>
+
+        <!-- Upcoming -->
+
+        <div class="coming-soon">
+
+            <h3>More Projects Coming Soon</h3>
+
+            <p>
+                We're working on new land development projects that will be announced soon.
+            </p>
+
+        </div>
+        
+    </section>
+
+
+
+    
+    <!-- WHY CHOOSE -->
+
+    <section class="why">
+
+        <h2>Why Choose Lokdham?</h2>
+        
+        <div class="features">
+
+            <div class="feature">
+
+                <h3>Customer First</h3>
+                
+                <p>We believe trust is our biggest investment.</p>
+
+            </div>
+
+            <div class="feature">
+
+                <h3>Verified Land</h3>
+
+                <p>Carefully selected properties with clear documentation.</p>
+
+            </div>
+
+            <div class="feature">
+
+                <h3>Prime Locations</h3>
+
+                <p>Projects located in growing investment corridors.</p>
+
+            </div>
+
+            <div class="feature">
+
+                <h3>Transparent Process</h3>
+
+                <p>Honest guidance from inquiry to registration.</p>
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- SERVICES -->
+
+    <section class="services">
+
+        <h2>Our Services (yet to build )</h2>
+
+        <div class="cards">
+
+            <div class="card">Land Development</div>
+
+            <div class="card">Plot Sales</div>
+
+            <!-- <div class="card">Investment Consultation</div> -->
+
+            <!-- <div class="card">Site Visits</div> -->
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section class="contact">
+        
+        <h2>Ready to Find Your Ideal Plot?</h2>
+
+        <a href="contactus.html" class="btn">Contact Us Now!</a>
+        
+    </section>
+    
+</main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Lokdham Developers. All Rights Reserved.
+            
+        </p>
+
+    </footer>
+
+
+    <script>
+        const menu = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+
+        menu.addEventListener("click", () => {
+
+            navLinks.classList.toggle("active");
+
+            menu.innerHTML =
+                navLinks.classList.contains("active") ? "✕" : "☰";
+
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const nav = document.querySelector("nav");
+            let lastScrollTop = 0;
+
+            window.addEventListener("scroll", function () {
+
+                // Only run on mobile
+                if (window.innerWidth <= 768) {
+
+                    let currentScroll =
+                        window.pageYOffset ||
+                        document.documentElement.scrollTop;
+
+                    if (currentScroll > lastScrollTop && currentScroll > 75) {
+                        // Scrolling DOWN
+                        nav.classList.add("nav-hidden");
+                    }
+                    else {
+                        // Scrolling UP
+                        nav.classList.remove("nav-hidden");
+                    }
+
+                    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+                }
+
+            });
+
+        });
+    </script>
+    <script>
+document.addEventListener("DOMContentLoaded", function(){
+
+    const starfield = document.querySelector(".starfield");
+
+    if(!starfield) return;
+
+    const stars = [];
+    const starCount = 50;
+
+    function createStar(){
+
+        const star = document.createElement("span");
+
+        star.classList.add("star");
+
+        if(Math.random() < 0.85){
+            star.classList.add("gold");
+        }else{
+            star.classList.add("charcoal");
+        }
+
+        star.angle = Math.random() * Math.PI * 2;
+        star.distance = Math.random() * 0.8 + 0.2;
+        star.speed = Math.random() * 0.00006 + 0.00004;
+
+        starfield.appendChild(star);
+
+        return star;
+    }
+
+    for(let i = 0; i < starCount; i++){
+        const star = createStar();
+        star.progress = Math.random();
+        stars.push(star);
+    }
+
+    function animateStars(){
+
+        const width = starfield.offsetWidth;
+        const height = starfield.offsetHeight;
+
+        const maxDistance =
+            Math.sqrt(width * width + height * height);
+
+        stars.forEach(star => {
+
+            star.progress += star.speed * 16;
+
+            if(star.progress >= 1){
+                star.progress = 0;
+                star.angle = Math.random() * Math.PI * 2;
+                star.distance = Math.random() * 0.8 + 0.2;
+            }
+
+            const distance =
+                star.progress * maxDistance * star.distance;
+
+            const x =
+                Math.cos(star.angle) * distance;
+
+            const y =
+                Math.sin(star.angle) * distance;
+
+            const scale =
+                0.15 + star.progress * 3.5;
+
+            const opacity =
+                star.progress < 0.12
+                ? star.progress / 0.12
+                : 1 - Math.max(0,(star.progress - 0.75) / 0.25);
+
+            star.style.transform =
+                `translate(-50%,-50%) translate3d(${x}px,${y}px,0) scale(${scale})`;
+
+            star.style.opacity = opacity;
+        });
+
+        requestAnimationFrame(animateStars);
+    }
+
+    animateStars();
+
+});
+</script>
+</body>
+
+</html>
