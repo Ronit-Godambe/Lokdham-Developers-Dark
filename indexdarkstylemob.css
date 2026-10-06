@@ -1,0 +1,337 @@
+/* =====================================================
+   MOBILE RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    /* =========================
+       GENERAL
+       ========================= */
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* =========================
+       NAVBAR
+       ========================= */
+
+    nav {
+        height: 70px;
+        padding: 0 5%;
+        position: sticky;
+        top: 0;
+    }
+
+    .logo img {
+        width: 65px;
+    }
+
+    /* Hamburger */
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        font-size: 28px;
+        color: var(--gold);
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+
+        display: none;
+        flex-direction: column;
+        align-items: center;
+
+        gap: 0;
+        padding: 10px 0 20px;
+
+        background: rgba(5, 5, 5, .98);
+        border-bottom: 1px solid rgba(200, 147, 26, .18);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .5);
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    nav > .btn {
+        display: none;
+    }
+
+
+    /* =========================
+       HERO
+       ========================= */
+
+    .hero {
+        min-height: auto;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        padding: 70px 5% 60px;
+        text-align: center;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+        flex: none;
+    }
+
+    .hero-left h1 {
+        font-size: 42px;
+        line-height: 1.05;
+        letter-spacing: .5px;
+    }
+
+    .developer-text {
+        font-size: .38em;
+        letter-spacing: 3px;
+    }
+
+    .hero-left h3 {
+        font-size: 18px;
+        margin: 18px 0;
+    }
+
+    .hero-left p {
+        max-width: 100%;
+        margin: 0 auto 28px;
+        font-size: 15px;
+    }
+
+    .buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .btn,
+    .btn-outline {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+
+    .hero-right {
+        margin-top: 10px;
+    }
+
+    .hero-right img {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 14px;
+    }
+
+
+    /* =========================
+       ABOUT
+       ========================= */
+
+    .about p {
+        max-width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+
+
+    /* =========================
+       PROJECTS
+       ========================= */
+
+    .projects {
+        padding: 60px 5%;
+    }
+
+    .featured-project {
+        width: 100%;
+        margin: 40px auto;
+    }
+
+    .featured-project h3 {
+        font-size: 23px;
+    }
+
+    .featured-project p {
+        font-size: 15px;
+        margin-bottom: 22px;
+    }
+
+    .featured-project video {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 14px;
+    }
+
+    .featured-project a {
+        margin-top: 25px;
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    .coming-soon {
+        width: 100%;
+        margin-top: 45px;
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+
+    /* =========================
+       WHY CHOOSE LOKDHAM
+       ========================= */
+
+    .features {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .feature {
+        padding: 25px 20px;
+        border-radius: 15px;
+    }
+
+    .feature h3 {
+        font-size: 19px;
+    }
+
+    .feature p {
+        font-size: 14px;
+    }
+
+
+    /* =========================
+       SERVICES
+       ========================= */
+
+    .services .cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        width: 100%;
+    }
+
+    .services .card {
+        padding: 25px 20px;
+        font-size: 18px;
+        border-radius: 15px;
+    }
+
+
+    /* =========================
+       CONTACT
+       ========================= */
+
+    .contact {
+        padding: 60px 5%;
+    }
+
+    .contact p {
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+
+    /* =========================
+       FOOTER
+       ========================= */
+
+    footer {
+        padding: 25px 15px;
+    }
+
+    footer p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL PHONES
+   ===================================================== */
+
+@media (max-width: 480px) {
+
+    section {
+        padding: 50px 5%;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    .hero {
+        padding-top: 55px;
+    }
+
+    .hero-left h1 {
+        font-size: 34px;
+    }
+
+    .hero-left h3 {
+        font-size: 17px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn,
+    .btn-outline {
+        width: 100%;
+        text-align: center;
+    }
+
+    .featured-project h3 {
+        font-size: 21px;
+    }
+
+    .services .card {
+        font-size: 17px;
+    }
+
+}
